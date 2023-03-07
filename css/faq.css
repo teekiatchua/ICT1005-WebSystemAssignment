@@ -1,0 +1,15 @@
+.jumbotron h1 {
+    color: black;
+}
+
+.col-sm-4 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+article{
+    background-color: white;
+    margin: auto;
+    padding: 100px;
+    color: black;       
+}

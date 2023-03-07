@@ -1,0 +1,63 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2 Oct, 2019, 12:20:12 PM
+    Author     : JOEL
+*/
+
+/* /Reservation Form CSS/ */
+form h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.form-control {
+    height: 50px !important;
+}
+
+select {
+    width: 120px;
+    height: 40px;
+}
+
+label {
+    font-size: 25px;
+    margin-top: 0px;
+    font-weight: 300 !important;
+}
+
+.col-sm-5 {
+    background-color: lightgray;
+    margin: 10px 0px 10px 30px;
+    width: 38% !important;
+    border-radius: 20px;
+    border-color: black;
+    border-style: solid;
+    position: absolute;
+}
+
+h2 {
+    font-weight: 700 !important;
+    margin-bottom: 0 !important;
+}
+
+.form-control {
+    height: 50px !important;
+}
+    
+#btnPayment{
+    background: black;
+    border-radius: 10px;
+    border-color: black;
+    width: 99%;
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

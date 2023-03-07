@@ -1,0 +1,109 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12 Nov, 2019, 10:29:44 PM
+    Author     : JOEL
+*/
+
+.products{
+    border: 1px solid #333;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.table{
+    margin:0px auto;
+    float: none;
+}
+
+td{
+    width: auto;
+}
+
+th{
+    border-top: 0 !important;
+    border-bottom: 1px solid #ddd;
+}
+
+.row {
+    margin: 0px auto;
+    float: none;
+}
+
+.centered{
+    float: none;
+    margin: 0 auto;
+}
+
+.button{
+    background: #6394F8;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+    border-radius: 3px;
+    font-size: 16px;
+    margin: 25px 0 15px 0;
+}
+
+.button:visited{
+    text-decoration: none;
+    color: white;
+}
+
+.button:hover{
+    background: #7fa9ff;
+    text-decoration: none;
+    color: white;
+}
+
+.button:active {
+    text-decoration: none;
+    color: white;
+}
+
+.btn-info {
+    background: black !important;
+    border-color: black !important;
+    width: 100%;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.btn-info:hover{
+    background-color: transparent !important;
+    color: black !important;
+    border-color: black !important;
+}
+
+.btn-danger {
+    font-size: 12px !important;
+    padding: 3px !important;
+}
+
+.btn-danger:hover {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h3 {
+    margin-top: 0px;
+}

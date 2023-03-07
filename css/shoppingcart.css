@@ -1,0 +1,87 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2 Oct, 2019, 12:44:02 PM
+    Author     : JOEL
+*/
+
+/* /Main Information/Payment Form/ */
+.row {
+    width: 100%;
+    margin-left: 0px;   
+    margin-right: 0px;
+}
+
+.col-sm-7 {
+    background-color: white;
+    margin: 10px 0px 10px 30px;
+    border-radius: 20px;
+    border-color: black;
+    border-style: solid;
+    position: absolute;
+}
+
+.col-sm-5 {
+    background-color: lightgray;
+    margin: 10px 0px 10px 30px;
+    width: 38% !important;
+    border-radius: 20px;
+    border-color: black;
+    border-style: solid;
+    position: absolute;
+}
+
+.col-sm-7 h1 {
+    text-align: center;
+    font-weight: bolder;
+    /* font-size: 60px; */
+}
+
+.row h2 {
+    font-weight: bolder;
+    /* font-size: 40px; */
+}
+
+/* /make input box bigger/ */
+.form-control {
+    height: 50px !important;
+}
+
+#btnPayment{
+    background: black;
+    border-radius: 10px;
+    border-color: black;
+    width: 100%;
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* /Shopping Cart Form/ */
+.carttable {
+    width: 100%;
+}
+
+th, td {
+  padding: 15px;
+}
+
+.rowbtn {
+    background-color: rgba(0, 0, 0, 0.0) !important;
+    border-color: rgba(0, 0, 0, 0.0) !important;
+}
+
+table {
+  border-collapse: collapse;
+}
+td { 
+  border: solid;
+  border-width: 1px 0;
+}
