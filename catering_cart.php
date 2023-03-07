@@ -76,7 +76,7 @@ if (filter_input(INPUT_GET, 'action') == 'addtodb') {
 <!DOCTYPE html>  
 <html lang="en">  
     <head>
-        <title>TUMMY FOR YUMMY</title>
+        <title>HONEY-LAB: HONEY FOR ALL</title>
         <link rel="icon" href="image/1004_Logo_2.png">
         <meta name="description" content="YUM-YUM's restaurant and catering services food menu. We provide a huge selection of dishes, including vegetarian!">
         <meta name="keywords" content="restaurant, catering, menu, vegetarian, food">
