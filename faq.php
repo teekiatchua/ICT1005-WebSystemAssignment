@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html lang="en">
     <head>
-        <title>TUMMY FOR YUM-YUM</title>
+        <title>TUMMY HURTZ</title>
         <link rel="icon" href="image/1004 Logo 2.png">
         <meta name="description" content="YUM-YUM's restaurant and catering services FAQ page! Ask about operating hours, delivery and catering services here!">
         <meta name="keywords" content="restaurant, menu, reservation, delivery, operating, hours">
