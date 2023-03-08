@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TUMMY FOR YUM-YUM</title>
+        <title>HONEY-LAB</title>
         <link rel="icon" href="image/1004 Logo 2.png">
         <meta name="description" content="YUM-YUM's restaurant and catering services checkout/payment page. Pay for your food after adding it in your shopping cart, safely and securely here! ">
         <meta name="keywords" content="restaurant, catering, menu, reservation, payment, checkout, shopping, cart">

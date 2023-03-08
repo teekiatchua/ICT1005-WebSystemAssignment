@@ -44,7 +44,7 @@
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="catering_cart.php"><span class="glyphicon glyphicon-shopping-cart"></span>CONTACT US</a></li>
+                        <li><a href="shoppingcart.php"><span class="glyphicon glyphicon-shopping-cart"></span>CONTACT US</a></li>
                     </ul>
                 </div>
             </div>
