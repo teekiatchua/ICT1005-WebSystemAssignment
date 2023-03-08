@@ -1,168 +1,137 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
-        <title>TUMMY FOR YUM-YUM</title>
-        <link rel="icon" href="image/1004 Logo 2.png">
-        <meta name="description" content="YUM-YUM's restaurant and catering services checkout/payment page. Pay for your food after adding it in your shopping cart, safely and securely here! ">
-        <meta name="keywords" content="restaurant, catering, menu, reservation, payment, checkout, shopping, cart">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link rel="stylesheet" href="css/header_footer.css">
-        <link rel="stylesheet" href="css/reservation.css">
-        <link rel="stylesheet" href="css/shoppingcart.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-        <script src="js/paymentFormValidation.js"></script>
-        <script src="js/shopcart.js"></script>
+        <title>HoneyLab | Store</title>
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="css/styles.css" />
     </head>
     <body>
-        <?php
-            include "navbar.inc.php";
-        ?>
-        
-        <section class="container-fluid imgcontainer">
-            <img class="figimage" src="image/CHECKOUT.png" alt="topimage">
-            <!--Url: https://www.flickr.com/photos/inthe-arena/13727335133/in/explore-2014-04-08 | Title: Takito | Author: Seaman Andrea | Publish: April,2014 | Publisher: Flickr | Visted: October 5, 2019-->
+        <header class="main-header">
+            <nav class="main-nav nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="store.html">STORE</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                </ul>
+            </nav>
+            <h1 class="band-name band-name-large">HoneyLab</h1>
+        </header>
+        <section class="container content-section">
+            <h2 class="section-header">Medicinal Honey</h2>
+            <div class="shop-items">    
+                <div class="shop-item">
+                    <span class="shop-item-title">Honey 1</span>
+                    <img class="shop-item-image" src="Images/honeyimg.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$999.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Honey 2</span>
+                    <img class="shop-item-image" src="Images/honeyimg.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$14.99</span>
+                        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 3</span>
+                    <img class="shop-item-image" src="Images/Album 3.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$9.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 4</span>
+                    <img class="shop-item-image" src="Images/Album 4.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
         </section>
-
-        <!--Payment Form-->
-        <form id="paymentForm" class="row" action="/action_page.php" method="POST">
-            <section class="col-sm-7">
-                <!--7 col out of 12 col for payment information-->
-                <h1>PAYMENT INFORMATION</h1>
-                <section class="col-sm-6">
-                    <!--half of the bigger col-->
-                    <h2>Customer information:</h2>
-                    <section class="form-group">
-                        <label>Customer Name:*</label>
-                        <input type="text" class="form-control" placeholder="Enter your full name" id="custname"
-                               pattern="[A-Za-z]{99}" title="Please input a name" required>
-
-                        <label>Email address:*</label>
-                        <input type="email" class="form-control" placeholder="Enter email" id="custemail"
-                               pattern="([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$"
-                               title="Please input a valid email" required>
-
-                        <label>Contact Number:*</label>
-                        <input type="tel" class="form-control" placeholder="Enter contact number" id="cnumber"
-                               pattern="[\d]{8}" maxlength="8" title="please input a valid number" required>
-                    </section>
-
-                    <h2>Address:</h2>
-                    <section class="form-group">
-                        <label>Street Name:*</label>
-                        <input type="text" class="form-control" placeholder="Enter street name" id="streetadd"
-                               pattern="[A-Za-z0-9'\.\-\#\s\,]+$" title="Please input a valid address" required>
-
-                        <label>Blk Number:*</label>
-                        <input type="tel" class="form-control" placeholder="Enter block number" id="blknumber"
-                               pattern="[A-Za-z0-9'\.\-\#\s\,]+$" title="Please input a valid blk number" required>
-
-                        <label>Unit Number:*</label>
-                        <input type="tel" class="form-control" placeholder="Enter unit number" id="unitnumber"
-                               pattern="\d+\-+\d+$" title="Please input a valid blk number" required>
-
-                        <label>Zip Code:*</label>
-                        <input type="tel" class="form-control" placeholder="Enter zip code" id="zipcode" pattern="^\d{6}$"
-                               title="Please input a valid blk number" required>
-
-                        <label>Delivery Date:*</label>
-                        <input type="date" class="form-control" id="deldate" required>
-
-                        <label>Delivery Time (hour:min:AM/PM):*</label>
-                        <input type="time" class="form-control" id="deltime" required>
-                    </section>
-                </section>
-
-                <section class="col-sm-6">
-                    <!--half of the bigger col-->
-                    <h2>Credit Card Information:</h2>
-                    <section class="form-group">
-                        <label>Full Name:*</label>
-                        <input type="text" class="form-control" placeholder="Enter your full name" id="ccname"
-                               pattern="[A-Za-z]{2,30}$" title="Please input a name" required>
-
-                        <label>Credit Card Number:*</label>
-                        <input type="tel" class="form-control" placeholder="Enter credit card number" id="ccnumber"
-                               pattern="^\d{16}$" maxlength="16" title="Please input a valid credit card number" required>
-
-                        <label>Exp:*</label>
-                        <input type="tel" class="form-control" placeholder="Enter expiry month Example: mm-yy (10/20)"
-                               id="expdate" pattern="^\d{2}\/\d{2}$" maxlength="5" title="Please input a valid exp date"
-                               required>
-
-                        <label>CCV:*</label>
-                        <input type="tel" class="form-control" placeholder="Enter CCV number" id="ccvnumber"
-                               pattern="^\d{3}$" maxlength="3" title="Please input a valid ccv number" required>
-                    </section>
-                </section>
-                <button type="submit" id="btnPayment" class="btn btn-default">CHECKOUT</button>
-                <h4>*information must be filled</h4>
-            </section>
-
-            <section class="col-sm-5">
-                <!--5 col out of 12 col for cart information-->
-                <h1>CART</h1>
-                <table class="carttable">
-                    <tr>
-                        <th colspan="2">CANCEL ORDERED ITEMS:</th>
-                        <th>Quantity:</th>
-                        <th>Price:</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <button type="button" class="btn btn-default btn-lg rowbtn"
-                                    onclick="SomeDeleteRowFunction(this)"><span
-                                    class="glyphicon glyphicon-remove"></span></button>
-                            Chicken
-                        </td>
-                        <td></td>
-                        <td>3</td>
-                        <td>$120</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <button type="button" class="btn btn-default btn-lg rowbtn"
-                                    onclick="SomeDeleteRowFunction(this)"><span
-                                    class="glyphicon glyphicon-remove"></span></button>
-                            Beef
-                        </td>
-                        <td></td>
-                        <td>2</td>
-                        <td>$150</td>
-
-                    </tr>
-                    <tr>
-                        <td>
-                            <button type="button" class="btn btn-default btn-lg rowbtn"
-                                    onclick="SomeDeleteRowFunction(this)"><span
-                                    class="glyphicon glyphicon-remove"></span></button>
-                            Fish
-                        </td>
-                        <td></td>
-                        <td>1</td>
-                        <td>$80</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td>Total</td>
-                        <td>$80</td>
-                    </tr>
-                </table>
-            </section>
-        </form>
-        
-        <?php
-            include "footer.inc.php";
-        ?>
+        <section class="container content-section">
+            <h2 class="section-header">MERCH</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">T-Shirt</span>
+                    <img class="shop-item-image" src="Images/Shirt.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Coffee Cup</span>
+                    <img class="shop-item-image" src="Images/Cofee.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$6.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+                <div class="cart-row">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="Images/Shirt.png" width="100" height="100">
+                        <span class="cart-item-title">T-Shirt</span>
+                    </div>
+                    <span class="cart-price cart-column">$19.99</span>
+                    <div class="cart-quantity cart-column">
+                        <input class="cart-quantity-input" type="number" value="1">
+                        <button class="btn btn-danger" type="button">REMOVE</button>
+                    </div>
+                </div>
+                <div class="cart-row">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="Images/Album 3.png" width="100" height="100">
+                        <span class="cart-item-title">Album 3</span>
+                    </div>
+                    <span class="cart-price cart-column">$9.99</span>
+                    <div class="cart-quantity cart-column">
+                        <input class="cart-quantity-input" type="number" value="2">
+                        <button class="btn btn-danger" type="button">REMOVE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$39.97</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
+        <footer class="main-footer">
+            <div class="container main-footer-container">
+                <h3 class="band-name">The Generics</h3>
+                <ul class="nav footer-nav">
+                    <li>
+                        <a href="https://www.youtube.com" target="_blank">
+                            <img src="Images/YouTube Logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.spotify.com" target="_blank">
+                            <img src="Images/Spotify Logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img src="Images/Facebook Logo.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
     </body>
 </html>
