@@ -23,10 +23,10 @@
                     <ul class="nav navbar-nav navbar">
                         <li><a href="index.php">HOME</a></li>
                         <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">MENU <span
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">PRODUCTS <span
                                     class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="our_products.php">OUR PRODUCTS</a></li>
+                                <li><a href="our_products.php">HOT SELLING PRODUCTS</a></li>
                                 <li class="divider"></li>
                                 <li><a href="product_homegrown.php">HOMEGROWN HONEY</a></li>
                                 <li class="divider"></li>
@@ -44,7 +44,7 @@
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="shoppingcart.php"><span class="glyphicon glyphicon-shopping-cart"></span>CONTACT US</a></li>
+                        <li><a href="shoppingcart.php"><span class="glyphicon glyphicon-shopping-cart"></span>CART</a></li>
                     </ul>
                 </div>
             </div>

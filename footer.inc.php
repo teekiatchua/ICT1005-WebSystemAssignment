@@ -12,8 +12,7 @@
             <section class="col-sm-4">
                 <h2><u>LOCATE US</u></h2>
                 <p>172 Ang Mo Kio Avenue 8, 666777</p>
-                <a data-target="#adminLogin" data-toggle="modal" href="#adminLogin" class="footer-link-txt-responsiveness">ADMINSTRATION</a>
-            </section>
+                <a data-target="#adminLogin" data-toggle="modal" href="#adminLogin" class="footer-link-txt-responsiveness">administration    </section>
             <section class="col-sm-4">
                 <h2><u>OPENING HOURS</u></h2>
                 <p>Monday - Sunday</p>
@@ -22,7 +21,7 @@
             </section>
             <section class="col-sm-4">
                 <h2><u>CONTACT</u></h2>
-                <p><a href="mailto:info@domain.com" title="glorythemes" class="footer-link-txt-responsiveness">ICT1005@sit.singaporetech.edu..com</a></p>
+                <p><a href="mailto:info@domain.com" title="glorythemes" class="footer-link-txt-responsiveness">ICT1005@sit.email.com</a></p>
                 <p>+65 1800 222 3333</p>
                 <p>172 Ang Mo Kio Avenue 8, 666777</p>
             </section>

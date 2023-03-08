@@ -173,24 +173,24 @@ function validateAccountForm() {
 function validateChangePasswordForm() {
 
     var currentPassword = document.forms["changePasswordForm"]["currentPassword"].value;
-    if (currentPassword == "") {
+    if (currentPassword === "") {
       alert("Current Password must be filled in");
       return false;
     }
     
     var newPassword = document.forms["changePasswordForm"]["newPassword"].value;
-    if (newPassword == "") {
+    if (newPassword === "") {
       alert("New Password must be filled in");
       return false;
     }
 
     var confirmPassword = document.forms["changePasswordForm"]["confirmPassword"].value;
-    if (confirmPassword == "") {
+    if (confirmPassword === "") {
       alert("Confirm Password must be filled in");
       return false;
     }
     
-    if(newPassword != confirmPassword)
+    if(newPassword !== confirmPassword)
     {
         alert("Password is incorrect");
         return false;

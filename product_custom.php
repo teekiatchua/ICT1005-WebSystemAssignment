@@ -6,7 +6,7 @@
     <head>
         <title>HONEY-LAB</title>
         <link rel="icon" href="image/1004_Logo_2.png">
-        <meta name="description" content="YUM-YUM's restaurant and catering services food menu. We provide a huge selection of dishes, including vegetarian!">
+        <meta name="description" content="HONEY-LAB's restaurant and catering services food menu. We provide a huge selection of dishes, including vegetarian!">
         <meta name="keywords" content="restaurant, catering, menu, vegetarian, food">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -80,7 +80,7 @@
                             </section>
                         </div>
                         <?php
-                    endwhile;
+                    
                 endif;
             endif;
             ?>
