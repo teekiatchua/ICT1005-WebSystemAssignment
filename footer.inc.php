@@ -22,9 +22,9 @@
             </section>
             <section class="col-sm-4">
                 <h2><u>CONTACT</u></h2>
-                <p><a href="mailto:info@domain.com" title="glorythemes" class="footer-link-txt-responsiveness">ICT1004@sit.singaporetech.edu..com</a></p>
+                <p><a href="mailto:info@domain.com" title="glorythemes" class="footer-link-txt-responsiveness">ICT1005@sit.singaporetech.edu..com</a></p>
                 <p>+65 1800 222 3333</p>
-                <p>172 Ang Mo Kio Avenue 8, 567739</p>
+                <p>172 Ang Mo Kio Avenue 8, 666777</p>
             </section>
 
             
