@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html lang="en">
     <head>
-        <title>TUMMY FOR YUM-YUM</title>
+        <title>HONEY-LAB</title>
         <link rel="icon" href="image/1004_Logo_2.png">
         <meta name="description" content="YUM-YUM's restaurant and catering services reservation form. Book your table online here! Easy and hassle-free!">
         <meta name="keywords" content="restaurant, menu, reservation, book, online, easy">

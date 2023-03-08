@@ -1,11 +1,10 @@
-<?php
-$connect = mysqli_connect('161.117.122.252', 'p2_5', 'rBs4CTxkDU', 'p2_5');
+<?php // $connect = mysqli_connect('161.117.122.252', 'p2_5', 'rBs4CTxkDU', 'p2_5');
 ?>
 
 <!DOCTYPE html>  
 <html lang="en">  
     <head>
-        <title>TUMMY FOR YUMMY</title>
+        <title>HONEY-LAB</title>
         <link rel="icon" href="image/1004_Logo_2.png">
         <meta name="description" content="YUM-YUM's restaurant and catering services food menu. We provide a huge selection of dishes, including vegetarian!">
         <meta name="keywords" content="restaurant, catering, menu, vegetarian, food">
@@ -39,14 +38,14 @@ $connect = mysqli_connect('161.117.122.252', 'p2_5', 'rBs4CTxkDU', 'p2_5');
 
             
             
-            <?php
-            $juicequery = "SELECT * FROM p2_5.res_menu WHERE (resmenu_category = 'juice');";
-            $juiceresult = mysqli_query($connect, $juicequery);
-
-            if ($juiceresult):
-                if (mysqli_num_rows($juiceresult) > 0):
-                    while ($product = mysqli_fetch_assoc($juiceresult)):
-                        ?>
+            //<?php
+//            $juicequery = "SELECT * FROM p2_5.res_menu WHERE (resmenu_category = 'juice');";
+//            $juiceresult = mysqli_query($connect, $juicequery);
+//
+//            if ($juiceresult):
+//                if (mysqli_num_rows($juiceresult) > 0):
+//                    while ($product = mysqli_fetch_assoc($juiceresult)):
+//                        ?>
                         <div class="col-sm-4 col-md-3">
                             <section class="products">
                                 <img src="image/<?php echo $product['resmenu_img']; ?>" title="<?php echo $product['resmenu_alt'] ?>" alt="<?php echo $product['resmenu_alt'] ?>" class="img-responsive" />
@@ -56,9 +55,7 @@ $connect = mysqli_connect('161.117.122.252', 'p2_5', 'rBs4CTxkDU', 'p2_5');
                             </section>
                         </div>
                         <?php
-                    endwhile;
-                endif;
-            endif;
+
             ?>
         </div>
         
@@ -66,14 +63,14 @@ $connect = mysqli_connect('161.117.122.252', 'p2_5', 'rBs4CTxkDU', 'p2_5');
             <h1>SODA</h1>
             <hr>
 
-            <?php
-            $sodaquery = "SELECT * FROM p2_5.res_menu WHERE (resmenu_category = 'soda');";
-            $sodaresult = mysqli_query($connect, $sodaquery);
-
-            if ($sodaresult):
-                if (mysqli_num_rows($sodaresult) > 0):
-                    while ($product = mysqli_fetch_assoc($sodaresult)):
-                        ?>
+            //<?php
+//            $sodaquery = "SELECT * FROM p2_5.res_menu WHERE (resmenu_category = 'soda');";
+//            $sodaresult = mysqli_query($connect, $sodaquery);
+//
+//            if ($sodaresult):
+//                if (mysqli_num_rows($sodaresult) > 0):
+//                    while ($product = mysqli_fetch_assoc($sodaresult)):
+//                        ?>
                         <div class="col-sm-4 col-md-3">
                             <section class="products">
                                 <img src="image/<?php echo $product['resmenu_img']; ?>" title="<?php echo $product['resmenu_alt'] ?>" alt="<?php echo $product['resmenu_alt'] ?>" class="img-responsive" />
